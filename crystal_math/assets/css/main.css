@@ -1,0 +1,38 @@
+body {
+text-align:center;
+background:black;
+background-image:url(../images/background.png);
+font-size: 30px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+
+content {
+  min-width:600px;
+}
+
+.font {
+font-size: 40px
+}
+
+.font2 {
+font-size: 30px;
+}
+.container {
+  min-width:610px;
+}
+.crystals {
+    width:500px;
+    display: inline-block;
+    justify-content: space-around;
+    align-items:center;
+    margin:10px;
+  }
+
+  .crystal {
+    width: 200px;
+    height: 200px;
+    float:left;
+    margin:10px;
+   }
+
