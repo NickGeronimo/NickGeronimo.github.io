@@ -1,0 +1,11 @@
+body{
+    background: skyblue;
+    text-align: center;
+}
+
+button,
+div,
+form,
+input {
+  margin: 5px;
+}
