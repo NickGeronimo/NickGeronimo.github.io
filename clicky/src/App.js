@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-//import Card from "./components/Card";
+import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
-
+import Score from "./components/Score";
+import images from "./images.json";
 import './App.css';
 
 //create start state
@@ -16,8 +17,13 @@ import './App.css';
 class App extends Component {
   //create state
     state = {
+    images, 
     clickedArray: [],
-    status: ""
+    status: "",
+    score:0,
+    target:9,
+
+
   };
 
     game = id => {
@@ -29,17 +35,17 @@ class App extends Component {
     }else{
       clickedArray.push(id)
 
-      if(clickedArray.length === 8){
-        this.setState({score: 8, status: "You Win!", clickedArray: []});
+      if(clickedArray.length === 9){
+        this.setState({score: 9, status: "You Win!", clickedArray: []});
         return;
       }
 
-      this.setState({  clickedArray, score: clickedArray.length, status: " " });
+      this.setState({ images, clickedArray, score: clickedArray.length, status: " " });
 
-      // for (let i = images.length - 1; i > 0; i--) {
-      //   let j = Math.floor(Math.random() * (i + 1));
-      //   [images[i], images[j]] = [images[j], images[i]];
-      //}
+      for (let i = images.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [images[i], images[j]] = [images[j], images[i]];
+      }
     }
   }
 
@@ -52,19 +58,19 @@ class App extends Component {
               Click A Different Card Every Time
           </p>
         </header>
-        {/* <Score total={this.state.score}
-               goal={8}
+        <Score total={this.state.score}
+               target={9}
                status={this.state.status}
-               /> */}
+               />
         <Wrapper>
-          {/* {this.state.images.map(square => (
+          {this.state.images.map(square => (
             <Card
               game={this.game}
               id={square.id}
               key={square.id}
               image={square.image}
             />
-          ))} */}
+          ))}
         </Wrapper>
 
     </div>
