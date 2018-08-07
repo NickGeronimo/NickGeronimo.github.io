@@ -1,0 +1,112 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ :root {
+  --main-bg-color: #1E1E1C;   
+  --font-color-1: #ffffff; 
+  --font-color-2: #AED62C;
+  --font-color-3: #5BC7D3;
+  --font-color-4: #ED2764;
+  --font1: 'Nunito', sans-serif;
+  --font2:'Roboto', sans-serif;
+}
+
+.bgcolor {
+  color:var(--main-bg-color);
+  background-color:var(--main-bg-color);
+}
+.color1  { 
+  color:var(--font-color-1);
+  background-color:var(--font-color-1);
+}
+
+.color2  { 
+  color:var(--font-color-2);
+  background-color:var(--font-color-2);
+
+}
+.color3  { 
+  color:var(--font-color-3);
+  background-color:var(--font-color-3);
+
+}
+.color4  { 
+  color:var(--font-color-4);
+  background-color:var(--font-color-4);
+
+}
+
+.sp {
+  height:500px;
+}
+nav ul a,
+nav .brand-logo {
+  
+  color: var(--font-color-4);
+}
+
+p {
+  line-height: 2rem;
+}
+
+h2 {
+  color:var(--font-color-3);
+  text-decoration: underline;
+}
+h5 {
+  font-family: var(--font2)
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+body{ 
+  background-color: var(--main-bg-color) ;
+  color: var(--font-color-1);
+  font-family: var(--font1);
+
+
+}
