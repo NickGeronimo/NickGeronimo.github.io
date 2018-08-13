@@ -7,11 +7,11 @@
  */
 
  :root {
-  --main-bg-color: #1E1E1C;   
-  --font-color-1: #ffffff; 
-  --font-color-2: #AED62C;
-  --font-color-3: #5BC7D3;
-  --font-color-4: #ED2764;
+  --main-bg-color: #0E1216;   
+  --font-color-1: #efefef; 
+  --font-color-2: #022462;
+  --font-color-3: #65C9DD;
+  --font-color-4: #EF7C82;
   --font1: 'Nunito', sans-serif;
   --font2:'Roboto', sans-serif;
 }
@@ -20,34 +20,44 @@
   color:var(--main-bg-color);
   background-color:var(--main-bg-color);
 }
+
 .color1  { 
   color:var(--font-color-1);
+}
+.bgcolor1{
   background-color:var(--font-color-1);
 }
 
 .color2  { 
   color:var(--font-color-2);
-  background-color:var(--font-color-2);
-
 }
+.bgcolor2{
+  background-color:var(--font-color-2);
+}
+
 .color3  { 
   color:var(--font-color-3);
+}
+.bgcolor3{
   background-color:var(--font-color-3);
-
 }
 .color4  { 
   color:var(--font-color-4);
+}
+.bgcolor4{
   background-color:var(--font-color-4);
-
 }
 
 .sp {
   height:500px;
 }
+
+
+
 nav ul a,
 nav .brand-logo {
   
-  color: var(--font-color-4);
+  color: var(--font-color-1);
 }
 
 p {
@@ -55,8 +65,7 @@ p {
 }
 
 h2 {
-  color:var(--font-color-3);
-  text-decoration: underline;
+  color:var(--font-color-4);
 }
 h5 {
   font-family: var(--font2)
@@ -84,6 +93,7 @@ h5 {
   #index-banner .section {
     top: 10%;
   }
+
 }
 
 @media only screen and (max-width : 600px) {
@@ -104,8 +114,8 @@ footer.page-footer {
 }
 
 body{ 
-  background-color: var(--main-bg-color) ;
-  color: var(--font-color-1);
+  background-color: var(--font-color-1) ;
+  color: var(--main-bg-color);
   font-family: var(--font1);
 
 

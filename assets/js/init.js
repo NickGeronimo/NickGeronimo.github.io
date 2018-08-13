@@ -1,3 +1,4 @@
+
 (function($){
   $(function(){
 
@@ -7,16 +8,18 @@
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.fixed-action-btn');
-  var instances = M.FloatingActionButton.init(elems, options);
-});
-
-// Or with jQuery
 
 $(document).ready(function(){
-  $('.fixed-action-btn').floatingActionButton();
   $('.carousel').carousel();
+  $('.scrollspy').scrollSpy();
+  $('.parallax').parallax();
+  $('.button-collapse').sideNav({
+    menuWidth: 300, // Default is 240
+    edge: 'right', // Choose the horizontal origin
+    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+  }
+);
 
 });
+
 

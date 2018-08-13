@@ -12,49 +12,98 @@
   <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>  
-  <div class="navbar-fixed">
-    <nav class="bgcolor">
-      <div class="nav-wrapper container">
-        <a href="#" class="brand-logo">Geronimo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact</a></li>
+
+
+  
+
+  <!--                      Main Nav                          -->
+  <div class="navbar-fixed z-depth-4">
+    <nav>
+        <div class="nav-wrapper bgcolor2">
+          <div class="row">
+            <div class="col s12">
+              <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons color1">menu</i></a>
+              <div class="brand-logo"> <a href="#top">
+                Geronimo
+              </a>
+              </div>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#work">Work</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#connect">Contact</a></li>
+
+                </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+      <!--                    side nav                     -->
+      <ul id="slide-out" class="sidenav bgcolor1">
+          <li><div class="user-view">
+            <div class="background bgcolor2">
+              
+            </div>
+            <div class="color3">
+            <a href="#user"></a><img class="circle" src="assets/images/pic3.jpg"></a>
+            <a href="#name"><span class="white-text name">Nicholas Geronimo</span></a>
+            <a href="#email"><span class="white-text email">Nicholas.Geronimo@gmail.com</span></a>
+          </div></li>
+          <li><a href="#about"><i class="material-icons">face</i>About</a></li>
+          <li><a href="#work"><i class="material-icons">work</i>Work</a></li>
+          <li><a href="#skills"><i class="material-icons">poll</i>Skills</a></li>
+          <li><a href="#connect"><i class="material-icons">contacts</i>Contact</a></li>
+
         </ul>
-      </div>
-    </nav>
-  </div>
+      <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
     
+    
+    
+    
+    
+    <div id="top" class="center container sp section scrollspy">
+      <br>
+      <br>
+      <h2>
+     Hello!
+    </h2>
+     <h3>
+     I am Nicholas Geronimo <br>
+     and I am a Web Developer.
+     </h3> 
+    </div>
 
-<div class="center container sp">
-  <br><br>
-   <h2>
-     Hello, I Am Nicholas Geronimo <br> and I am a Web Developer.
-   </h2>
+  <div class="parallax-container">
+    <div class="parallax"><img src="assets/images/bground2.jpg"></div>
   </div>
 
-<div class="center container sp">
-  <h1> About Me</h1>
+<div id="about" class="center container sp section scrollspy">
+  <h2> About Me</h2>
   <h5>A military brat from all over with a wide range of skills ranging from video to 3D modeling and animation to full-stack web development. I received my Bachelors Degree for digital arts from the University of Tampa and moved to Orlando where I currently spend working around Disney. I have a passion for web development always looking for new experiences and opportunities. </h5>
-
+<br>
 </div>
 
-<div class="center container sp">
+<div class="parallax-container">
+    <div class="parallax"><img src="assets/images/bground1.jpg"></div>
+  </div>
+
+<div id="work" class="center container sp section scrollspy">
     <h2> Work</h2>
     <div class="carousel">
         <a class="carousel-item color1" href="#one!"><div class="blue-text">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio non eaque, magni velit facere quo eligendi alias suscipit optio corporis, ullam soluta iure odio officiis sint repellat nostrum, iusto dolor. 
         </div>
         </a>
-          <a class="carousel-item color2" href="#two!">Image 2</a>
-        <a class="carousel-item color3" href="#three!">Image 3</a>
-        <a class="carousel-item color4" href="#four!">Image 4</a>
-        <a class="carousel-item bgcolor" href="#five!">Image 5</a>
+        <a class="carousel-item bgcolor2" href="#two!">Image 2</a>
+        <a class="carousel-item bgcolor3" href="#three!">Image 3</a>
+        <a class="carousel-item bgcolor4" href="#four!">Image 4</a>
+        <a class="carousel-item bgcolor1" href="#five!">Image 5</a>
       </div>
           
   </div>
 
-<div class="center container">
+<div id="skills" class="center container section scrollspy sp">
       <h2> Tech and Skills</h2>
       <h5> Web: HTML, CSS, Javascript, Jquery, Firebase, Node.js, MySQL, MongoDB, Mongoose, React.js, Express, Bootstrap, Materialize, Json, Ajax, Laravel.
           <br>
@@ -63,7 +112,7 @@
       </h5>
     </div>
 
-    <div class="center container">
+    <div id="connect" class="center container section scrollspy">
         <h2> Connect With Me</h2>
         <h5>
             <img class="responsive-img circle" src="assets/images/github.png">
