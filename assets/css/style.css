@@ -78,9 +78,9 @@ h5 {
 
 
 @media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
+  .parallax-container {
+    height: 100px;
+
   }
   #index-banner .section {
     top: 10%;
