@@ -2814,7 +2814,7 @@ video.responsive-video {
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 300px;
+  height: 500px;
 }
 
 .parallax-container .parallax {
@@ -5131,7 +5131,6 @@ small {
   padding: 10px 8px;
   font-size: 1rem;
   z-index: 2000;
-  background-color: transparent;
   border-radius: 2px;
   color: #fff;
   min-height: 36px;

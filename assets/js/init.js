@@ -12,6 +12,8 @@
 $(document).ready(function(){
   $('.carousel').carousel();
   $('.scrollspy').scrollSpy();
+  $('.collapsible').collapsible();
+  $('.tooltipped').tooltip();
   $('.parallax').parallax();
   $('.button-collapse').sideNav({
     menuWidth: 300, // Default is 240

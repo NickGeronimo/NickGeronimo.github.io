@@ -51,8 +51,12 @@
 .sp {
   height:500px;
 }
+.sp1{height:400px;}
 
-
+.sk {
+  height:100px;
+  width:100px;
+}
 
 nav ul a,
 nav .brand-logo {
@@ -75,7 +79,15 @@ h5 {
   color: #26a69a;
 }
 
-
+.parallax-container {
+  min-height: 300px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -91,9 +103,6 @@ h5 {
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
-  }
-  .parallax-container{
-  height: 150px;
   }
 }
 
