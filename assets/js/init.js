@@ -8,9 +8,11 @@
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
-
 $(document).ready(function(){
-  $('.carousel').carousel();
+  $('.carousel').carousel({
+    padding: 100
+  });
+  setTimeout(autoplay, 4000);
   $('.scrollspy').scrollSpy();
   $('.collapsible').collapsible();
   $('.tooltipped').tooltip();
@@ -26,3 +28,7 @@ $(document).ready(function(){
 });
 
 
+function autoplay() {
+  $('.carousel').carousel('next');
+  setTimeout(autoplay, 4000);
+}        
