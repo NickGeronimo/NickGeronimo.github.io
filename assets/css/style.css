@@ -1,11 +1,11 @@
 /* Custom Stylesheet */
 /**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
+* Use this file to override Materialize files so you can update
+* the core Materialize files in the future
+*
+* Made By MaterializeCSS.com
  */
-
+ 
  :root {
   --main-bg-color: #0E1216;   
   --font-color-1: #efefef; 
@@ -15,6 +15,14 @@
   --font1: 'Nunito', sans-serif;
   --font2:'Roboto', sans-serif;
 }
+
+body{ 
+  background-color: var(--font-color-1) ;
+  color: var(--main-bg-color);
+  font-family: var(--font1);
+}
+
+
 
 .bgcolor {
   color:var(--main-bg-color);
@@ -57,6 +65,12 @@
   height:100px;
   width:100px;
 }
+.cn {
+  max-height:150px;
+  max-width:150px;
+}
+
+
 
 nav ul a,
 nav .brand-logo {
@@ -115,12 +129,4 @@ h5 {
 
 footer.page-footer {
   margin: 0;
-}
-
-body{ 
-  background-color: var(--font-color-1) ;
-  color: var(--main-bg-color);
-  font-family: var(--font1);
-
-
 }
