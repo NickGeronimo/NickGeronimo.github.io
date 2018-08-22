@@ -7,10 +7,8 @@
 })(jQuery); // end of jQuery name space
 
 $(document).ready(function(){
-  $('.carousel').carousel({
-    padding: 100
-  });
-  setTimeout(autoplay, 4000);
+  $('.carousel').carousel({}); setTimeout(autoplay, 4000);
+  $('.carousel.carousel-slider').carousel({fullWidth:true, indicators: true})
   $('.scrollspy').scrollSpy();
   $('.collapsible').collapsible();
   $('.tooltipped').tooltip();
