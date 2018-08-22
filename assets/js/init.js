@@ -7,7 +7,7 @@
 })(jQuery); // end of jQuery name space
 
 $(document).ready(function(){
-  $('.carousel').carousel({}); setTimeout(autoplay, 4000);
+  $('.carousel').carousel({}); setTimeout(autoplay, 5000);
   $('.carousel.carousel-slider').carousel({fullWidth:true, indicators: true})
   $('.scrollspy').scrollSpy();
   $('.collapsible').collapsible();
@@ -20,5 +20,5 @@ $(document).ready(function(){
 
 function autoplay() {
   $('.carousel').carousel('next');
-  setTimeout(autoplay, 4000);
+  setTimeout(autoplay, 5000);
 }        

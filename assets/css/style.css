@@ -89,6 +89,12 @@ h5 {
   font-family: var(--font2)
 }
 
+
+.fit{
+  max-width: 90%; 
+  height:auto; 
+}
+
 .sidenav-trigger {
   color: #26a69a;
 }
